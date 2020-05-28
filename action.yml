@@ -4,7 +4,8 @@ author: 'Duarte Nunes <duarte.m.nunes@gmail.com'
 inputs:
   repo-token:
     description: 'The GITHUB_TOKEN secret'
-    required: true
+    required: false
+    default: ${{ github.token }}
   pattern:
     description: 'A regular expression to filter the outputs by.'
     required: false
